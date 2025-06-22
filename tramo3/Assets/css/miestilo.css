@@ -1,0 +1,181 @@
+/* hoja de estilos*/
+body 
+{
+    font-family: monospace, 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0c7478;
+    color: #000000;
+}
+
+header {
+    background-color:#0a0a2e ;
+    color: #f9f6f9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    background-color:#bc2626 ;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0a0802;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    padding: 8px 16px;
+    transition: all 0.3s ease; 
+}
+
+section p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.principal {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color:#045c6ffd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.principal ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.principal li {
+    margin-bottom: 8px;
+}
+
+footer {
+    position: relative;
+    bottom: auto;
+    background-color:#28648f ;
+    color:#050505;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    
+    
+    /*background-color:#2583db ;
+    color:#fdfafa;
+    text-align: center;
+    padding: 10px 0;
+
+    bottom: 0;
+    width: 100%;*/
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    border-radius: 10px;
+    max-width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.redes {
+    text-align: center;
+    padding: 15px 0;
+    background-color:#000000 ; 
+}
+
+.redes a {
+    color:#090806;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.redes a:hover {
+    color: #b31fb3; 
+    transform: scale(1.2);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+    
+}
+
+.empresa 
+{
+    width: 10%;
+    height: 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.Crochet {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+
+.Crochet:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-text {
+  text-align: center;
+  background-color: #69baed; 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: 5px solid #010000; 
+  font-size: 18px; 
+  color: #333; 
+}
+
+.carousel-inner img {
+  max-height: 400px; 
+  object-fit: cover;
+}
+
+
+.carousel-inner {
+  margin-bottom: 50px; 
+}
