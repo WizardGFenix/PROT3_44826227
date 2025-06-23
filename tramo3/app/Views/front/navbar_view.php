@@ -1,5 +1,5 @@
 <!--Navegacion-->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     
   <div class="container-fluid">
@@ -42,5 +42,5 @@
 
 <!--Navegacion-->
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
 </body>
