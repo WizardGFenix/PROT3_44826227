@@ -40,7 +40,7 @@
     
         <?php if($validation->getError('email')) {?> 
                                 <div class='alert alert-danger mt-4'> 
-                                    <?= $error = $validation->getError('usuario'); ?> 
+                                    <?= $error = $validation->getError('email'); ?> 
                                 </div> 
                             <?php }?> 
     </div>
@@ -65,7 +65,7 @@
    
     </div>
                  <?php if ($validation->getError('password')): ?> 
-                                <div class="alert alert-danger mt-2"><?= $validation->getError('pass'); ?></div> 
+                                <div class="alert alert-danger mt-2"><?= $validation->getError('password'); ?></div> 
                             <?php endif; ?>
 
     </div>
