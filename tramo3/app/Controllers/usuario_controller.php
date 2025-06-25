@@ -25,7 +25,7 @@ class usuario_controller extends Controller
         $input = $this->validate([
             'nombre'    => 'required|min_length[3]|max_length[25]',
             'apellido'  => 'required|min_length[3]|max_length[25]',
-            'usuario'=> 'required|min_length[3]|max_length[15]',
+            'usuario'=> 'required|min_length[3]|max_length[15]|is_unique[info_usuario.usuario]',
             'email'=> 'required|min_length[3]|max_length[100]|valid_email|is_unique[info_usuario.email]',
             'password'=> 'required|min_length[3]|max_length[20]'
         ],
@@ -38,7 +38,7 @@ class usuario_controller extends Controller
 
             
             $data['titulo'] = 'Registrarse';
-            session()->setFlashdata('fail','Usuario no registrado, verifique los datos');
+            session()->setFlashdata('msg','Usuario no registrado, verifique los datos');
             return view('front/head_view',$data)
             . view('front/navbar_view')
             . view('back/usuario/registro', ['validation' => $this])
@@ -54,7 +54,7 @@ class usuario_controller extends Controller
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             ]);
 
-            session()->setFlashdata('success','Usuario registrado con exito');
+            session()->setFlashdata('msg','Usuario registrado con exito');
             return redirect()->to(base_url('/login'));
         }
     }  

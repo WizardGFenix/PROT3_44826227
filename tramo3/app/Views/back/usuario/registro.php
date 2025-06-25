@@ -4,12 +4,10 @@
                     <form method="post" action="<?php echo base_url('/enviar-form') ?>"> 
                         <?=csrf_field();?>
                         <?=csrf_field();?> <!-- genera un campo oculto o token de seguridad--> 
-                        <?php if(!empty (session()->getFlashdata('fail'))):?> 
-                            <div class="alert alert-danger"><?=session()->getFlashdata('fail'); ?></div> 
+                        <?php if(!empty (session()->getFlashdata('msg'))):?> 
+                            <div class="alert alert-danger"><?=session()->getFlashdata('msg'); ?></div> 
                         <?php endif?> 
-                        <?php if(!empty (session()->getFlashdata('success'))):?> 
-                            <div class="alert alert-danger"><?=session()->getFlashdata('success'); ?></div> 
-                        <?php endif?> 
+                        
 
 
     <div class="mb-3">
